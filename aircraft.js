@@ -46,7 +46,7 @@ class Aircraft {
     if (this.distance >= myCanvas.tenthPart) {
       this.distance = 0;
       if (this.fuel <= 3) {
-        this.fuel -= 0.2;
+        this.fuel -= 2;
         } else {
         this.fuel--;
         };
@@ -97,7 +97,7 @@ function ControladorInicia(){
             }else if (umAviao.x < myCanvas.width && umAviao.fuel <= 0) {
                 umAviao.hidden = true;
                 umAviao.fuel = 10;
-                displayDamageds.innerText = ++controllerState.fallenPlanes;
+                displayFallen.innerText = ++controllerState.fallenPlanes;
             }else {
                  //avioes chegando
                 if(umAviao.x >= myCanvas.controladorArea){
