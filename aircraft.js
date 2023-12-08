@@ -46,7 +46,7 @@ class Aircraft {
     if (this.distance >= myCanvas.tenthPart) {
       this.distance = 0;
       if (this.fuel <= 3) {
-        this.fuel -= 2;
+        this.fuel -= 0.2;
         } else {
         this.fuel--;
         };
